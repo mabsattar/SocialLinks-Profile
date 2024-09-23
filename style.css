@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.buttons {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+}
