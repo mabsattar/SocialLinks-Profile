@@ -1,14 +1,84 @@
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Greylight: hsl(0, 0%, 20%);
+  --Greynormal: hsl(0, 0%, 12%);
+  --Greydark: hsl(0, 0%, 8%);
+  --Fontsizeparagraph: 14px;
+  --FontFamily: "Inter", sans-serif;
+  --Fontweightlight: 400;
+  --Fontweightbold: 700;
+  --Fontweightsemi: 600;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .card {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 55vh;
+  min-width: 320px;
+  margin: auto;
+  background-color: var(--Greynormal);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #000000;
+  border: 2px solid #00000000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  background-color: #f8f8f8;
+  background-color: var(--Greydark);
 }
 
 .buttons {
   display: grid;
-  flex-wrap: wrap;
-  justify-content: center;
+  border-radius: 10px;
+  margin: 15px 0px;
+  padding: 15px 0px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin-top: -100px;
+}
+
+.profile-info {
+  text-align: center;
+  font-family: var(--FontFamily);
+}
+
+#name {
+  font-size: 20px;
+  font-weight: var(--Fontweightbold);
+  color: var(--White);
+}
+
+#location {
+  font-size: 14px;
+  font-weight: var(--Fontweightlight);
+  color: var(--Green);
+  margin-top: -15px;
+}
+
+.bio {
+  font-size: var(--Fontsizeparagraph);
+  font-weight: var(--Fontweightlight);
+  color: var(--White);
+}
+
+@media (max-width: 476px) {
+  .card {
+    width: 300px;
+    padding: 1.5em;
+  }
 }
